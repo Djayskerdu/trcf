@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRCF Legacy</title>
+  <link rel="stylesheet" href="trcf.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<div class="global-left-logo">
+  <img src="img/whtrcf.png" alt="TRCF Logo" />
+</div>
+
+<div class="global-right-logo">
+  <img src="img/legacy.png" alt="TRCF Logo" />
+</div>
+
+<body>
+  <!-- VIDEO BACKGROUND -->
+  <video class="video-bg" autoplay muted loop>
+    <source src="img/bg.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- HEADER -->
+  <header id="home">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/whtrcf.png" alt="TRCF Logo" />
+        <span>TRCF<br>DVO</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">home</a></li>
+        <li class="dropdown">
+          <a href="#about">about <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#" onclick="openModal('mission')">→ our mission</a>
+            <a href="#" onclick="openModal('vision')">→ our vision</a>
+            <a href="#" onclick="openModal('core')">→ our core values</a>
+          </div>
+        </li>
+        <li><a href="#regular-events">regular events</a></li>
+        <li><a href="#upcoming-events">upcoming events</a></li>
+        <li><a href="#contacts">contacts</a></li>
+      </ul>
+      <div class="g12-logo">
+        <img src="img/g12logo.png" alt="G12 Logo" />
+      </div>
+    </nav>
+
+    <section class="hero">
+      <p>CELEBRATING 35 YEARS OF TRCF LEGACY</p>
+      <div class="logos">
+        <img src="img/trcflogo.png" alt="TRCF Badge" class="badge" />
+        <img src="img/35th.png" alt="35 Legacy Logo" class="legacy" />
+      </div>
+      <h1>THE REDEEMED CHRISTIAN FELLOWSHIP</h1>
+    </section>
+  </header>
+
+  <!-- SECTIONS -->
+  <section id="about" class="section animate-on-scroll">
+  <div class="h2">ABOUT TRCF</div>
+  <div class="about-content">
+    <p><b>THE REDEEMED CHRISTIAN FELLOWSHIP</b> or <b>TRCF</b> is an evangelical church community located at F. Torres St. Davao City (8000) founded by Rev. Dinah Edejer. <br><br>
+      Rooted in discipleship teachings, for over 35 years, the Lord has used TRCF to bless people—fulfilling His agenda; “None shall perish,” through continuously spreading God’s love and word to the community.<br><br>
+      For decades, TRCF has become more than just a church, it became a family—a home to many.
+    </p>
+    <div class="about-buttons">
+      <button onclick="openModal('mission')">OUR MISSION</button>
+      <button onclick="openModal('vision')">OUR VISION</button>
+      <button onclick="openModal('core')">OUR CORE VALUES</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Modals -->
+  <div class="modal" id="mission" role="dialog" aria-labelledby="mission-title" aria-modal="true">
+    <div class="modal-content">
+      <h3 id="mission-title">Our Mission</h3>
+      <p>To reach the lost, make disciples, and build generations rooted in Christ’s love.</p>
+      <button class="modal-close" onclick="closeModal('mission')">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="vision" role="dialog" aria-labelledby="vision-title" aria-modal="true">
+    <div class="modal-content">
+      <h3 id="vision-title">Our Vision</h3>
+      <p>To see every family transformed by the power of the Gospel through intentional discipleship.</p>
+      <button class="modal-close" onclick="closeModal('vision')">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="core" role="dialog" aria-labelledby="core-title" aria-modal="true">
+    <div class="modal-content">
+      <h3 id="core-title">Our Core Values</h3>
+      <p>Faith, Love, Unity, Integrity, and Servant Leadership are the heart of who we are.</p>
+      <button class="modal-close" onclick="closeModal('core')">Close</button>
+    </div>
+  </div>
+
+<section id="regular-events" class="section animate-on-scroll">
+  <div class="regular-events-container">
+    <p>OUR <span style="font-style: italic; font-weight: bold;">REGULAR EVENTS</span></p>
+
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <div class="poster" onclick="goToSlide(0)">
+          <img src="img/scc.png" alt="SCC" />
+        </div>
+        <div class="poster" onclick="goToSlide(1)">
+          <img src="img/opm.png" alt="OPM" />
+        </div>
+        <div class="poster" onclick="goToSlide(2)">
+          <img src="img/yj.png" alt="YJ" />
+        </div>
+      </div>
+
+      <div class="indicators">
+        <span onclick="goToSlide(0)"></span>
+        <span onclick="goToSlide(1)"></span>
+        <span onclick="goToSlide(2)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="upcoming-events" class="section animate-on-scroll">
+  <div class="upcoming-events-container">
+    <p>OUR <span style="font-style: italic; font-weight: bold;">UPCOMING EVENTS</span></p>
+    <div class="event-card">
+      <img src="img/tys.png" alt="Upcoming Event" />
+    </div>
+  </div>
+</section>
+
+  <footer id="contacts">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="img/bltrcf.png" alt="TRCF Logo" />
+      <h3>TRCF<br />DVO</h3>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-phone-alt"></i> (082) 221 3435</p>
+      <p><i class="fas fa-envelope"></i> trcfdvo@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> F. Torres St. Davao City (8000)</p>
+    </div>
+
+    <div class="footer-social">
+      <div class="icons">
+        <a href="https://www.facebook.com/TRCFDvo"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/trcfdvo/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@theredeemedchristianfellow6122"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p class="message">Jesus loves you!</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>All rights reserved. Copyright © 2025</p>
+  </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
